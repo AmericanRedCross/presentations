@@ -17,11 +17,8 @@ body {
   font-size: 30px;
   font-weight: 200;
   letter-spacing: -0.02em;
-<<<<<<< HEAD
-  color: #fff; }
-=======
-  color: #ED1B2E; }
->>>>>>> 5e6e6c21e5bd4d4a5d3b7ebbe74eee5867516892
+  color: #fff; 
+}
 
 ::selection {
   color: white;
@@ -38,11 +35,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-<<<<<<< HEAD
   color: #fff;
-=======
-  color: #FFFFFF;
->>>>>>> 5e6e6c21e5bd4d4a5d3b7ebbe74eee5867516892
   font-family: "Montserrat", Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: -0.03em;
