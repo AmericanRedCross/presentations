@@ -7,6 +7,11 @@ Various presentations by the American Red Cross International Services GIS Team 
   + [Mobile Data Collection](http://americanredcross.github.io/presentations/mobiledatacollection)
   + [CaerusGeo](http://americanredcross.github.io/presentations/caerusgeo)
   + [Mobile GPS](http://americanredcross.github.io/presentations/mobilegps)
+  + [Garmin GPS](http://americanredcross.github.io/presentations/garminGPS)
+
+###GIS Training
+
+  + [Intro to GIS](http://americanredcross.github.io/presentations/introGIS)
 
 ###Program/Project
 
