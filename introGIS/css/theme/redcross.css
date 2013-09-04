@@ -66,6 +66,16 @@ body {
   color: #fff;
   background: #d08a1d; }
 
+.reveal section li {
+  list-style-type:none;
+  color: #FAF0E6;
+}
+.reveal section li:before {
+  color: #ED1B2E;
+  content:"\002022";
+  list-style-type: none;
+  padding-right: 20px;
+}
 /*********************************************
  * IMAGES
  *********************************************/
@@ -128,8 +138,4 @@ body {
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-<<<<<<< HEAD
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
-=======
-  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
->>>>>>> 5e6e6c21e5bd4d4a5d3b7ebbe74eee5867516892
