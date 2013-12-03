@@ -9,21 +9,16 @@ var RevealSource = (function() {
 
 		// Fires when slide is changed
 		Reveal.addEventListener( 'slidechanged', function( event ) {
-			post('slidechanged');
+			post();
 		} );
 
 		/**
 		 * Posts the current slide source information to the source 
-		 *
-		 * @param {String} eventType Expecting 'slidechanged', 'fragmentshown' 
-		 * or 'fragmenthidden' set in the events above to define the needed 
-		 * slideDate.
 		 */
-		function post( eventType ) {
+		function post() {
 			var slideElement = Reveal.getCurrentSlide(),
 				messageData;
 
-			if( eventType === 'slidechanged' ) {
 				var source = slideElement.querySelector( 'aside.source' );
 				console.log(source);
 			}
@@ -33,4 +28,4 @@ var RevealSource = (function() {
 	// return { open: openNotes };
 })();
 
-console.log('source javascript');
+
