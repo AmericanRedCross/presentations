@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+/**
+ * RedCross theme for reveal.js.
+ *
+ * Copyright (C) 2013 Dale Kunce & American Red Cross, http://redcross.org;
+ */
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: #111111;
+  background-color: #111111; }
+
+.reveal {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  color: #fff; 
+}
+
+::selection {
+  color: white;
+  background: #111111;
+  text-shadow: none; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #fff;
+  font-family: "Montserrat", Impact, sans-serif;
+  line-height: 0.9em;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  text-shadow: none; }
+
+.reveal h1 {
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+  color: #fff;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #ED1B2E; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px;
+  /*background: rgba(255, 255, 255, 0.12);*/
+  /*border: 4px solid #eeeeee;*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ED1B2E;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #ED1B2E; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #ED1B2E; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #ED1B2E; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #ED1B2E; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #f3d7ac; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #f3d7ac; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #f3d7ac; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #f3d7ac; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #ED1B2E;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); 
+}
+
+/*********************************************
+ * Logo Image
+ *********************************************/
+.redcross_logo {
+  position:absolute;
+  top:5px;
+  right:5px;
+  z-index:9999;
+  width:215px;
+  height:70px;
+  background: url('../img/redcross-logo_light.png') no-repeat 0 0;
+}
+
+.logo {
+  height: 150px;
+}
+
+.logo2 {
+  height: 100px;
+}
