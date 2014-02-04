@@ -1,0 +1,14 @@
+/*********************************************
+ * Picture Source
+ *********************************************/
+
+.reveal aside.source {
+	position: absolute;
+	display: block;
+	bottom: 15px;
+	left: 15px;
+}
+
+.flickr {
+	background-image:url('../images/flickr.png');
+}
