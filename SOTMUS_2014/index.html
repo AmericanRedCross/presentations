@@ -167,7 +167,10 @@
 <script>
 	Reveal.initialize({
 		center: true,
-		transition: 'default'
+		transition: 'default',
+		dependencies: [
+					{ src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
 	});
 </script>
 <script>
