@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<title>GIS, Maps, and DRR</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/redcross.css" id="theme">
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+	<style>
+		img {
+			border: none !important;
+			background: none !important;
+		}
+	</style>
+</head>
+
+<body>
+<div class="reveal">
+	<div class="slides">
+
+		<section>
+			<h1>Maps & Data</h1><br><br>
+			<h3>Daniel Joseph</h3>
+			<h6 style="line-height:1em;"><em>Information Management Delegate, Haiyan Operation, IFRC</em><br>
+			daniel.joseph@ifrc.org  |  +63 998 961 2139<br>
+			@danbjoseph  |  skype: danielbjoseph</h6>
+			<img src="images/triplelogo.png" />
+		</section>
+		<section><h1>What is GIS?</h1></section>			
+		<section><h1>Matching</h1></section>
+		<section data-background="images/data.png" data-background-size="contain"><h1 style="background: rgba(7,7,7,0.5)">Data</h1></section>
+		<section><h1>With</h1></section>
+		<section data-background="images/place.png" data-background-size="contain"><h1 style="background: rgba(7,7,7,0.5)">Place</h1></section>
+
+		<section><h1>What can GIS do for my organization?</h1></section>
+		<section>
+			<h2>Donor Engagement</h2>
+				<h4><ul>
+					<li>collect project locations and map base infastructure</li>
+					<li>georeference photos</li>
+					<li>create maps for project donors</li>
+					<li>demonstrate technolgical sophistication</li>
+					<li>greater accountability</li>
+				</ul></h4>
+				<img src="images/DonorEngagement.png" />
+		</section>	
+		<section>
+			<h2>Historical Trend Analysis</h2>
+				<h4><ul>
+					<li>record geography of current and past projects</li>
+					<li>long term perspective</li>
+					<li>evidence-based decision making for portfolio management</li>
+				</ul></h4>
+				<img src="images/HistoricalTrendAnalysis.png" />
+		</section>
+		<section>
+			<h2>Managing Equipment</h2>
+				<h4><ul>
+					<li>capture location, status, and coverage of response equipment</li>
+					<li>replace aging or inadequate equipment quickly</li>
+					<li>match distribution with vulnerability</li>
+				</ul></h4>
+				<img src="images/ManagingEquipment.png" />
+		</section>
+		<section>
+			<h2>Targeting Communities</h2>
+				<h4><ul>
+					<li>map hazards and risks</li>
+					<li>research additional data (e.g. population)</li>
+					<li>identify activites by other organizations</li>
+					<li>select most at-risk and least-covered communities</li>
+				</ul></h4>
+				<img src="images/TargetingCommunities.png" />
+		</section>
+		<section>
+			<h2>Technical Collaboration</h2>
+				<h4><ul>
+					<li>georeference and preserve project data</li>
+					<li>accessible, standardized data formats (csv, shapefile, Access database)</li>
+					<li>reuse valuable data from technical partners</li>
+					<li>share your data</li>
+				</ul></h4>
+				<img src="images/TechnicalCollaboration.png" />
+		</section>
+
+		<section>
+			<section><h2>Example:</h2><h1>Assessing Fire Risk in Gulu, Uganda</h1></section>
+			<section data-background="images/Gulu_pre-tracing.png" data-background-size="contain"></section>
+			<section data-background="images/Gulu_today.png" data-background-size="contain"></section>
+			<section data-background="images/Gulu_huts.png" data-background-size="contain"></section>
+		</section>
+		<section>
+			<section><h1>Evidence Based Decision Making</h1></section>
+			<section data-background="images/manageNaturalResources.png" data-background-size="contain"><aside class="notes">manage natural resources</aside></section>
+			<section data-background="images/mapDistributionOfRisk.png" data-background-size="contain"><aside class="notes">map distribution of risk</aside></section>
+			<section data-background="images/planForNaturalDisasters.png" data-background-size="contain"><aside class="notes">plan for natural disasters</aside></section>
+			<section data-background="images/highlightCapacities.png" data-background-size="contain"><aside class="notes">highlight capacties</aside></section>
+			<section data-background="images/advocateToPartners.png" data-background-size="contain"><aside class="notes">advocate to partners</aside></section>
+			<section data-background="images/idGaps.png" data-background-size="contain"><aside class="notes">identify gaps</aside></section>
+		</section>
+
+
+
+		<section>
+			<section>
+				<img src="images/osm_logo.png" data-source="http://wiki.openstreetmap.org/wiki/File:Public-images-osm_logo.png" />
+				<h1>OpenStreetMap</h1>
+				<aside class="notes">OpenStreetMap (OSM) is a project that is building a free map of the whole world. Thousands of members are teamed to create an accurate, detailed and up-to-date map that is as good or better than commercial products. Like Wikipedia OpenStreetMap benefits from the ongoing input of thousands of people around the world.</aside>			
+			</section>
+
+			<section><img class="stretch" src="images/OSM_tracingRiver.gif" data-source="http://www.theatlantic.com/technology/archive/2013/11/how-online-mapmakers-are-helping-the-red-cross-save-lives-in-the-philippines/281366/" /></section>
+		</section>
+
+		<section>
+			<section>
+				<img class="stretch" src="images/HOT_logo.png" data-source="http://wiki.openstreetmap.org/wiki/File:Handwerkszeug1.JPG" />
+				<aside class="notes">Humanitarian OpenStreetMap Team</aside>
+			</section>		
+			
+			<section><img class="stretch" src="images/osm_taskingManager.png" /></section>
+			
+			<section><img class="stretch" src="images/2013-12-03_AreasTracedByDigitalVolunteers.jpg" /></section>
+			<section><img src="images/Typhoon_Haiyan_changesets_vis.png" /></section>
+			<section><img class="stretch" src="images/HOT_Task_338.png" data-source="http://wiki.openstreetmap.org/wiki/File:HOT_Task_338.png" /></section>
+			<section>
+				<img src="images/HOT_beforeAfter_Tacloban.png" data-source="http://www.theatlantic.com/technology/archive/2013/11/how-online-mapmakers-are-helping-the-red-cross-save-lives-in-the-philippines/281366/" />
+				<aside class="notes">OSM data before and after - Tacloban, Philippines (Typhoon Haiyan)</aside>
+			</section>
+			<section>
+				<img src="images/HOT_beforeAfter_Minova.png" data-source="http://wiki.openstreetmap.org/wiki/File:HOT-Task-Manager-before-after-minova-kivu-rdc.png" />
+				<aside class="notes">OSM data before and after - Democratic Republic of the Congo (conflict)</aside>
+			</section>
+			<section data-background="images/osm_contributorList.png" data-background-size="contain"></section>
+		</section>	
+
+		<section>
+			<section><h1>community + open data + imagery = </h1></section>
+			<!-- <section>
+				<img src="images/OSMvsGOOGLE.png" data-source="http://www.gizmodo.co.uk/2014/04/tracking-an-ebola-outbreak-in-a-city-without-maps" />
+				<h2>Why not just use Google Maps?</h2>
+				<aside class="notes">OSM data versus Google Maps</aside>
+			</section> -->
+			<section data-background="images/mamou-tracing.gif" data-background-size="contain" data-source="https://www.mapbox.com/blog/mamou-tracing/">
+				<h2 style="text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.9);">29 hours for 68 volunteers to map an entire city <br> (20,105 buildings)</h2>
+			</section>
+			<section><h2>5 days for almost 200 volunteers to map 100,000+ buildings & hundreds of kilometers of roads</h2></section>
+			<section><img src="images/Guinea1.jpg" data-source="https://www.mapbox.com/blog/ebola-mapping-progress/" />
+				<aside class="notes">in Guinea where Ebola broke out. In just these few days since the outbreak, almost 200 mappers have made enormous progress filling in the map with the full range of detail needed by emergency workers, from major roads to individual buildings. The colors represent how recently each feature (building or road) was added to OpenStreetMap. Moving around the color wheel from red through yellow and green to blue, the features in red were added to the map as the first stage of the humanitarian mapping, and the ones in blue were mapped most recently.</aside>
+			</section>
+			<section><img src="images/Guinea2.jpg" data-source="https://www.mapbox.com/blog/ebola-mapping-progress/" /></section>
+			<section><img src="images/Guinea3.jpg" data-source="https://www.mapbox.com/blog/ebola-mapping-progress/" /></section>
+		</section>
+		
+		<section>	
+			<section><h1>GIS and the Red Cross Response to Haiyan</h1></section>
+			<section data-background="images/osm_garmin.jpg" data-background-size="contain"></section>
+			<section>
+				<h1>OsmAnd</h1>
+				<img src="images/osmand.png" />
+				<aside class="notes">OsmAnd is a map and navigation app with access to the free, worldwide, and high-quality OpenStreetMap (OSM) data. All map data can be stored on your device's memory card for offline use.</aside>
+			</section>
+			<section data-background = "images/EasternSamar_Balangkayan.png" data-background-size="contain">
+				<aside class="notes">base maps for situational awareness</aside></section>
+			<section data-background="images/2013-01-19_GermanWatSanTentDulagLeyte_1.jpg" data-background-size="contain"></section>
+			<section data-background="images/2013-01-19_GermanWatSanTentDulagLeyte_2.jpg" data-background-size="contain"></section>
+
+			<section data-background = "images/Cash_Palo.png" data-background-size="contain">
+				<aside class="notes">planning maps</aside></section>
+
+			<section data-background = "images/OSM_ReliefPlanning.JPG" data-background-size="contain"></section>
+			<section data-background = "images/OSM_ReliefPlanning2.JPG" data-background-size="contain"></section>
+			<section data-background = "images/carhood1.jpg" data-background-size="contain"></section>
+			<section data-background = "images/carhood2.jpg" data-background-size="contain"></section>
+			<section data-background = "images/sheltercluster_mtg.jpg" data-background-size="contain"></section>
+			<section data-background="images/2013-01-16_MapInTheField.jpg" data-background-size="contain"></section>
+			<section data-background="images/mapsInPlanning.jpg" data-background-size="contain"></section>
+			<section data-background="images/MovementUnconditionalCash_2014-03-18.png" data-background-size="contain">
+				<aside class="notes">reports and communciation pieces</aside></section>
+			<section data-background="images/2014-04-30_ProvincesTentsTarps.png" data-background-size="contain"></section>
+			<section data-background="images/IFRC_ReliefERU_DistributionCoverage_20140126-01.png" data-background-size="contain"></section>			
+		</section>	
+	
+		<section>
+			<section><h1>Structured Data = Unlocked Data</h1></section>			
+			<section><h1>Excel is a powerful tool</h1><img src="images/Logo_Microsoft_Excel_2013.png" /></section>
+			<section><img class="stretch" src="images/screen_data.png" /></section>	
+			<section>
+				<h1>Pivot Table</h1>
+				<h2><ul>
+					<li>automatically sort, count total, or give average of data stored in a table</li>
+					<li>display summarized results in second table</li>
+				</ul></h2>
+			</section>		
+			<section><img class="stretch" src="images/screen_pivot1.png" /></section>
+			<section><img class="stretch" src="images/screen_pivot2.png" /></section>
+			<section><img class="stretch" src="images/screen_pivot3.png" /></section>
+			<section><h1>Create online tools to analyze and communicate (good) data</h1></section>					
+			<section><img class="stretch" src="images/screen_analysisDistributions.png" /></section>
+			<section><img class="stretch" src="images/screen_analysisMap.png" /></section>			
+			
+		
+		</section>
+		
+		<section>
+			<section><h1>Mobile Data Collection</h1></section>
+			<section><p style="font-size:500px">?</p></section>
+			<section><h1>Collect data for use by other systems</h1></section>
+			<section><h1>Geo-enabled M&E</h1></section>
+			<section><h1>BaseMap +</h1></section>
+			<section><h1>Program Data =</h1></section>
+			<section><h1>Awesomeness</h1></section>
+			<section><h1><small>Why use</small> Mobile Data Collection?</h1></section>
+			<section>
+				<h1>FASTER</h1>
+				<h2><ul>
+					<li>surveying and encoding combined into one step</li>
+					<li>data can be analyzed as it is being collected</li>
+				</ul></h2>
+			</section>
+			<section>
+				<h1>More ACCURATE</h1>
+				<h2><ul>
+					<li>skip logic to guide the data gatherer</li>
+					<li>constraint checks to ensure data is entered properly</li>
+					<li>no encoding step means no transcription errors</li>
+				</ul></h2>
+			</section>
+			<section>
+				<h1>More INFORMATIVE</h1>
+				<h2><ul>
+					<li>collect data at the source</li>
+					<li>GPS coordinates, timestamps, photos, etc.</li>
+					<li>better maps & reports</li>
+					<li>see the impact</li>
+					<li>because it's fun</li>
+				</ul></h2>
+			</section>
+			
+		</section>		
+
+		<section>
+			<section><img class="stretch" src="images/formhubmobile.png" /></section>
+			<section>
+				<h2><blockquote cite="https://formhub.org/faq/">"timely and accurate data is the single greatest component of making socially impactful decisions"</blockquote></h2>
+			</section>
+			<section>
+				<h2><blockquote cite="https://formhub.org/faq/">"making data collection simple — allowing more time for harder tasks like how to make an impact with the information"</blockquote></h2>
+			</section>
+			<section><img class="stretch" src="images/paperstack.jpg" /></section>
+			<section><img class="stretch" src="images/GPSandNotebook.jpg" data-source="http://wiki.openstreetmap.org/wiki/File:Handwerkszeug1.JPG" /></section>
+			<section>
+				<h1><small>what is</small> formhub</h1>
+				<hr>
+				<h3><ul>
+					<li>tool for making data collection simple</li>
+					<li>built by the Modi Research Group at Columbia University</li>
+					<li>freely available under an opensource license</li>
+			</section>
+			<section><img src="images/formhub1design.png" /><h1>1. DESIGN the survey</h1></section>
+			<section><img src="images/formhub2collect.png" /><h1>2. COLLECT the data</h1></section>
+			<section><h1>with android device</h1><h1>& ODK Collect</h1></section>
+			<section><img class="stretch" src="images/formhub_menu.jpg" /></section>
+			<section><img class="stretch" src="images/formhub_gps.jpg" /></section>
+			<section><img class="stretch" src="images/formhub_q1.jpg" /></section>
+			<section><img class="stretch" src="images/formhub_q2.jpg" /></section>
+			<section><img class="stretch" src="images/formhub_surveyEnd.jpg" /></section>
+			<section><img src= "images/formhub3analyze.png" /><h1>3. ANALYZE the data</h1></section>
+			<section><img class="stretch" src="images/screen_formhubData.png" /></section>
+			<section><img class="stretch" src="images/screen_download.png" /></section>
+			<section><img class="stretch" src="images/screen_excelData.png" /></section>			
+		</section>
+
+		<section>	
+			<section><h1>GIS software?</h1><img src="images/esri.png" /></section>
+			<section>
+				<h1>Quantum GIS (QGIS)</h1><img src="images/qgis.png" />
+				<h4>a free and open source geographic information system</h4>			
+			</section>
+		</section>
+
+		<section>
+			<section><h1>What about data?</h1></section>
+			<section>
+				<h1>GADM</h1><img src="images/gadm2_low.png" />
+				<h4>database of Global Administrative Areas <a href="http://gadm.org/" target="_blank">(gadm.org)</a></h4>
+			</section>
+			<section>
+				<h1>PhilGIS</h1>
+				<h4>Philippine GIS Data Clearinghouse</h4>
+				<h4>http://philgis.org/ </h4>
+			</section>
+			<section>
+				<img src="images/unocha_logo.jpg" />
+				<h4>UN Office for the Coordination of Humanitarian Affair</h4>
+				<h4>https://philippines.humanitarianresponse.info/</h4>
+			</section>
+		</section>
+
+		<section>
+			<section><h1>open source tools and<br>open source community</h1></section>
+			<section><img src="images/github_logo.png" /><br>
+				<h2><ul><li>collaboration, sharing, commnuity, version control</li></ul></h2>
+			</section>
+			<section><img class="stretch" src="images/screen_pageGitHubPages.png" /></section>
+			<section><img class="stretch" src="images/screen_pageGitHubPagesAmCross.png" /></section>
+			<section>
+				<img src="images/leaflet_logo.png" />
+				<h3><ul>
+					<li>modern open-source JavaScript library for interactive maps</li>
+					<li>"designed with simplicity, performance and usability in mind"</li>
+					<li><a href="http://leafletjs.com/examples/quick-start.html">quick start guide</a>, 
+					<a href="http://leafletjs.com/examples.html">other tutorials</a>,
+					<a href="http://leafletjs.com/reference.html ">and documentation</a>	
+					</li> 
+				</ul></h3>
+			</section>			
+			<section>
+				<img src="images/codecademy_logo.png" />
+				<h2><ul>
+					<li><a href="http://www.codecademy.com/tracks/web" target="_blank">learn HTML & CSS</a></li>
+					<li><a href="http://www.codecademy.com/tracks/javascript" target="_blank">learn JavaScript</a></li>
+				</ul></h2>
+			</section>
+			<section><img class="stretch" src="images/screen_pageD3.png" /></section>
+			<section><img class="stretch" src="images/screen_pageNVD3.png" /></section>
+			<section><h1>GeoJson</h1><h3><em></em>a format for encoding a variety of geographic data structures <a href="http://geojson.org/">(geojson.org)</a></h3></section>
+			<section><img src="images/shapefilesnippet.png" /></section>
+			<section><img src="images/geojsonsnippet.png" /></section>
+		</section>
+
+		<section>
+			<h3>Including geographic information in your project planning and management is easy, inexpensive, and has many benefits!</h3>
+			<h1>Get Mapping!</h1>
+
+		</section>
+
+<!-- 
+		https://github.com/blog/1528-there-s-a-map-for-that
+		https://help.github.com/articles/mapping-geojson-files-on-github
+		http://www.gizra.com/content/tipali-a-tool-for-easily-finding-polio-vaccination-clinics/ -->
+
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+		Reveal.initialize({
+			center: true,
+			transition: 'linear',
+			dependencies: [
+				// Syntax highlight for <code> elements
+        		{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        		// Speaker notes
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
+		});
+	</script>
+<!-- 
+		<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42245094-3', 'americanredcross.github.io');
+      ga('send', 'pageview');
+
+      </script> 
+-->
+</body>
+</html>
