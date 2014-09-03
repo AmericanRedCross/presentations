@@ -51,16 +51,17 @@
 			</section>
 			<section data-background="images/" data-background-size="contain">
 				<aside class="notes">The first problem was to somehow link project "locations" to actual geographies so we could map it. One of the requirements was to be able to aggregate the data from small geographies up to country and ultimatly our own custom regions.</aside>
-				<section data-background="images/" data-background-size="contain">
+			</section>
+			<section data-background="images/" data-background-size="contain">
 					<aside class="notes">The first first problem though was to chose what boundary data to use. Long story short all global admin boundaries suck. We ended up using GADM because it had the best coverage but we had to spend a lot of time to clean it up.</aside>
 			</section>
 			<section data-background="images/" data-background-size="contain">
 				<h4><a href="https://github.com/AmericanRedCross/simplegadm">SimpleGADM</a></h4>
 				<aside class="notes">Caveats GADM has all kinds of issues including some bad geometry that prevented us from just puting it into PostGIS and running st_simplify. Not to mention it also doesn't have a clean license. We ended up cleaning it up using a proces that involved QGIS, GRASS, and a really big Amazon EC2 instance.</aside>
-		</section>
-		<section data-background="images/baby.jpg" data-background-size="contain">
+			</section>
+			<section data-background="images/baby.jpg" data-background-size="contain">
 			<aside class="notes">Once we had the boundary stack figured out it was "easy" to have Ryan's team wire everything up.</aside>
-	</section>
+			</section>
 			<section data-background="images/shark.gif" data-background-size="contain">
 				<aside class="notes">Closing Slide - Don't be intimidated by the big problems. The problem is never the technology or the code. Its about finding the right people in your organization to be champions and about reusing as much open source code as you can. You are here because you like open source. Contribute, if you can't code document, if you can't document, hire some cool people to do it for you.</aside>
 			</section>
