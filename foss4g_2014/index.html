@@ -23,7 +23,7 @@
 			</section>
 			<section data-background="images/" data-background-size="contain">
 				<h3>Dale Kunce - <a href="">Red Cross</a> - @calimapnerd</h3>
-				<h3>Ryan Whitley - <a href="">SpatialDev</a> - @apollom</h3>
+				<h3>Ryan Whitley - <a href="">SpatialDev</a> - @apollolm</h3>
 			</section>
 			<section data-background="images/haiti_earthquake.jpg" data-background-size="contain">
 				<aside class="notes">After the Haiti Earthquake in 2010 the need and desire for programs and disaster situational awareness drastically changed. the haiti earthquake was a huge catalyst to change how the American Red Cross opperated and managed our data.</aside>
@@ -49,19 +49,28 @@
 			<section data-background="images/hackers.gif" data-background-size="contain">
 				<aside class="notes">my brilliant idea was to let someone way smarter than me try to figure it out. I met Ryan at the first JS.geo a while back and thought, hey he was cool. "somehow" they managed to beat out a couple of closed source companies that will remain nameless. Being in DC we didn't want the typical DC beltway bandit, we wanted someone that had dealt with humanitarian issues before</aside>
 			</section>
-			<section data-background="images/rerun.gif" data-background-size="contain">
-				<aside class="notes">The first problem was to somehow link project "locations" to actual geographies so we could map it. One of the requirements was to be able to aggregate the data from small geographies up to country and ultimatly our own custom regions.</aside>
+			<section data-background="images/parent.gif" data-background-size="contain">
+				<aside class="notes">Dale starts, then Ryan's Slide. Parent/Child Relationships: The first problem was to somehow link project "locations" to actual geographies so we could map it. One of the requirements was to be able to aggregate the data from small geographies up to country and ultimatly our own custom regions.</aside>
 			</section>
+            <section data-background="images/rerun.gif" data-background-size="contain">
+                <aside class="notes">Ryan's Slide: Chubbs Server, AKA Spatial Server.  We wanted a lightweight yet flexible way to serve up GeoJSON, with the ability to query and aggregate and customize the output.  Node.js & PostGIS project called Chubbs.</aside>
+            </section>
+            <section data-background="images/heavylifting.gif" data-background-size="contain">
+                <aside class="notes">Ryan's Slide: We then needed a way to get our hands on the data inside of Salesforce.  Yes, there is an API, but we needed to be able to preprocess, join and merge the data with the spatial data in our PostGIS instance. So, we created our own simple ETL.</aside>
+            </section>
 			<section data-background="images/smart.gif" data-background-size="contain">
-					<aside class="notes">The first first problem though was to chose what boundary data to use. Long story short all global admin boundaries suck. We ended up using GADM because it had the best coverage but we had to spend a lot of time to clean it up.</aside>
+					<aside class="notes">Ryan's Slide: SmartGADM - choosing the correct shapes(boundaries) based on what the user is looking at. The first first problem though was to chose what boundary data to use. Long story short all global admin boundaries suck. We ended up using GADM because it had the best coverage but we had to spend a lot of time to clean it up.</aside>
 			</section>
 			<section data-background="images/" data-background-size="contain">
 				<h4><a href="https://github.com/AmericanRedCross/simplegadm">SimpleGADM</a></h4>
-				<aside class="notes">Caveats GADM has all kinds of issues including some bad geometry that prevented us from just puting it into PostGIS and running st_simplify. Not to mention it also doesn't have a clean license. We ended up cleaning it up using a proces that involved QGIS, GRASS, and a really big Amazon EC2 instance.</aside>
+				<aside class="notes">Dale's Slide: Caveats GADM has all kinds of issues including some bad geometry that prevented us from just puting it into PostGIS and running st_simplify. Not to mention it also doesn't have a clean license. We ended up cleaning it up using a proces that involved QGIS, GRASS, and a really big Amazon EC2 instance.</aside>
 			</section>
 			<section data-background="images/baby.jpg" data-background-size="contain">
-			<aside class="notes">Once we had the boundary stack figured out it was "easy" to have Ryan's team wire everything up.</aside>
+			    <aside class="notes">Dale's Slide: Once we had the boundary stack figured out it was "easy" to have Ryan's team wire everything up.</aside>
 			</section>
+            <section data-background="images/labeling.gif" data-background-size="contain">
+                <aside class="notes">Ryan's Slide: Smart Labeling - Problem with labeling centroids of large polygons.  We created a library that dynamically calculates the centroid of the VISIBLE area for each polygon, thus ensuring that user is always seeing a label for an area they're looking at (as opposed to pre-calced centroids).</aside>
+            </section>
 			<section data-background="images/shark.gif" data-background-size="contain">
 				<aside class="notes">Closing Slide - Don't be intimidated by the big problems. The problem is never the technology or the code. Its about finding the right people in your organization to be champions and about reusing as much open source code as you can. You are here because you like open source. Contribute, if you can't code document, if you can't document, hire some cool people to do it for you.</aside>
 			</section>
