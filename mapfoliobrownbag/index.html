@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="google-translate-customization" content="dd5207c171a5d11a-29d1c9c17ff34632-g6f9aa177fdeafd13-1a"></meta>
+
+	<title>mapfolio brownbag</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/redcross.css" id="theme">
+</head>
+
+<body>
+	<a href="http://redcross.org">
+		<div class="redcross_logo" /></div>
+	</a>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="images/mapfolioscreenshot.png" data-background-size="contain">
+			</section>
+			<section data-background="images/haiti_earthquake.jpg" data-background-size="contain">
+				<aside class="notes">After the Haiti Earthquake in 2010 the need and desire for programs and disaster situational awareness drastically changed. the haiti earthquake was a huge catalyst to change how the American Red Cross opperated and managed our data.</aside>
+			</section>
+			<section data-background="images/excel.gif" data-background-size="contain">
+				<aside class="notes">We were living in the pre-cloud era, what data we did have was in different excel files scattered around the organization.</aside>
+			</section>
+			<section data-background="images/silos.gif" data-background-size="contain">
+				<aside class="notes">basically we all had our own silos, silos that needed to come down</aside>
+			</section>
+			<section data-background="images/nottalking.gif" data-background-size="contain">
+				<aside class="notes">which basically meant that even if we wanted to we couldn't easily talk to one antoher and share data about even the most basic things like where are projects were.</aside>
+			</section>
+			<section data-background="images/system.gif" data-background-size="contain">
+				<aside class="notes">a long time ago someone at the red cross said we need a system. A way to organize our data. It would be magical.</aside>
+			</section>
+			<section data-background="images/404cat.gif" data-background-size="contain">
+				<aside class="notes">However, the organization and the technology were not ready yet. This process was 17 years in the making.</aside>
+			</section>
+			<section data-background="images/salesforce.gif" data-background-size="contain">
+				<aside class="notes">Now that the organizations data was put into Salesforce we had one huge problem it wasn't spatial data. Salesforce lacks an out of the box solution to geospatial locations.</aside>
+			</section>
+			<section data-background="images/what.gif" data-background-size="contain">
+				<aside class="notes">Its around this time that I joined the Red Cross. My first assignment was to show salesforce data on a map.</aside>
+			</section>
+			<section data-background="images/hackers.gif" data-background-size="contain">
+				<aside class="notes">my brilliant idea was to let someone way smarter than me try to figure it out. I met Ryan at the first JS.geo a while back and thought, hey he was cool. "somehow" they managed to bet out a couple of closed source companies that will remain nameless. Being in DC we didn't want the typical DC beltway bandit, we wanted someone that had dealt with humanitarian issues before</aside>
+			</section>
+			<section data-background="images/adventure.gif" data-background-size="contain">
+				<aside class="notes">so we hired SpatialDev and they got to work, we tried some stuff and mostly people left us alone becaue ECOS was and is so much more important to the GIS success.</aside>
+			</section>
+			<section data-background="images/ohoh.gif" data-background-size="contain">
+				<aside class="notes">before I show the site I want to caution you that the data you see in the system is current as of last night, we update our database every 24 hours.</aside>
+			</section>
+			<section data-background="images/biking.gif" data-background-size="contain">
+				<aside class="notes">Our number one improvement for this year for the site is to make it even faster.</aside>
+			</section>
+			<section data-background="images/construction.gif" data-background-size="contain">
+				<aside class="notes">Please bear in mind that we still have a little bit of work to do on the site but we believe its good enough to use right now.</aside>
+			</section>
+			<section data-background="images/login.gif" data-background-size="contain">
+				<aside class="notes">To keep the data secure we require that you use your salesforce credentials.</aside>
+			</section>
+			<section>
+				<h2><a href="http://geo.redcross.org">geo.redcross.org</a></h2>
+				<aside class="notes">before I show the site I want to caution you that the data you see in the system is current as of last night, we update our database every 24 hours.</aside>
+			</section>
+		</div>
+	</div>
+</div>
+<div id="google_translate_element" style="position:absolute;bottom:5px;left:5px;z-index:9999;">
+</div>
+<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT}, 'google_translate_element');
+	}
+</script>
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script src="js/lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	Reveal.initialize({
+		center: true,
+		transition: 'default',
+		dependencies: [
+					{ src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+	});
+</script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-42245094-1', 'americanredcross.github.io');
+	ga('send', 'pageview');
+
+</script>
+</body>
+</html>

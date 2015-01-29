@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="google-translate-customization" content="dd5207c171a5d11a-29d1c9c17ff34632-g6f9aa177fdeafd13-1a"></meta>
+
+	<title>Household Validation Survey Training</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="http://americanredcross.github.io/presentations/theme/redcross.css" id="theme">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+</head>
+
+<body>
+<div id="google_translate_element"><a href="http://redcross.org"><img style="float:right" src="images/redcross-logo.png"></a></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<div class="reveal">
+		<div class="slides">
+			<section><h1>Emergency cartography</h1></br><h3>@rbanick</h3></section>
+			<section><h2>Methods / principles / tricks / lessons</h2></section>
+			<section><h2>They always needed the map yesterday</h2></section>
+			<section><h2>On the ground mapping: uncomfortable, pragmatic, unpredictable, often ugly</h2></section>
+			<section data-background = "images/PRC_Chapters_Affected_Persons.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>			
+			<section data-background = "images/San_Juan_Close_Up.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>			
+			<section data-background = "images/SantaFe_RoadAtlas.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>			
+			<section data-background = "images/Cash_Burauen_20140130.png" data-background-size="500px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>	
+			<section data-background = "images/Overall_DROMIC_2weekchanges-01.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>			
+			<section><h2>Mostly remote support</h2></section>
+			<section><h1>Core technology</h1></section>
+			<section><h2>Static mapping</h2>
+				<ul><h3>
+					<li>QGIS: general cartography</li>
+					<li>ArcGIS: labeling</li>
+					<li>Command line tools (GDAL, ogr2ogr, etc.): geoprocessing</li>
+					<li>Adobe Illustrator (AI): core cartography</li>
+				</h3></ul>
+			</section>
+			<section><h2>Interactive mapping</h2>
+				<ul><h3>
+					<li>Leaflet.js</li>
+					<li>Tilemill</li>
+					<li>D3.js</li>
+					<li>Mapbox Studio?</li>
+			</section>
+			<section><h2>OpenStreetMap (OSM)</h2></section>
+
+			<section><h2>The competition</h2></section>
+			<section data-background = "images/MA_Tacloban_basemap.png" data-background-size="500px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>			
+			<section data-background = "images/MA_Callouts.png" data-background-size="500px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>			
+			<section data-background = "images/MA_More_Callouts.png" data-background-size="700px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>	
+
+			<section><h2>Red cross colors</h2>
+				<ul><h3>
+					<li>White</li>
+					<li>Light grey</li>
+					<li>Black</li>
+					<li>Bright, saturated red</li>
+				</h3></ul>
+			</section>
+			<section data-background = "images/ARC_Logo_Bttn_HorizStkd_RGB_whitebackground.png" data-background-size="800px"></section>
+			<section data-background = "images/North_Iraq_Roads.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/North_Iraq_July2DTM_Scaled.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section><h2>+</h2></section>
+			<section><h1>Cartographic and design principles</section>
+			<section><h2>Thematic content and design</h2>
+				<ul><h3>
+					<li>Desaturated background colors</li>
+					<li>Highly saturated symbols and thematic layers</li>
+					<li>Semi-transparent callout boxes</li>
+					<li>Light drop shadows</li>
+					<li>Occasional sidebars of information</li>
+					<li>Overall: clean, simple elements</li>
+				</h3></ul>
+			</section>
+			<section data-background = "images/2013-12-16_StaffLocations_2.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/2013-12-18_MovementPartners3W.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/Panay_HousesDestroyed.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/2014-06-05_Ebola_Regional_Cases-01.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section><h2>Printing considerations</h2></section>
+			<section><h2>Interactive mapping = A little messier</h2></section>
+			<section data-background = "images/haiyan_dashboard_ugly.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section><h2>Reference maps</h2></section>
+			<section><h2>OSM - currently made by hand</h2></section>
+			<section data-background = "images/Northern_Namibia-01.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/Gueckedou-NE.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>			
+			<section><h2>All rules are made to be broken, especially in disaster response</h2></section>
+			<section><h2>Highest value maps</h2></section>
+			<section><h2>Reference maps</h2></section>
+			<section><h2>Mashups of multiple thematic layers</h2></section>
+			<section data-background = "images/2014-01-27_Gaps_Panay_ES.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>			
+
+			<section><h2>Basic analysis</h2></section>
+			<section data-background = "images/2014-02-13_ProvincesOverview.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>			
+			<section data-background = "images/Overall_DROMIC_2weekchanges-01.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>			
+			
+			<section><h1>Organization and workflows</h1></section>
+
+			<section><h2>The team</h2>
+				<ul><h3>
+					<li>GIS lead and developer</li>
+					<li>2 analysts / cartographers / junior developers</li>
+					<li>Intern(s)</li>
+					<li>Awesome volunteers</li>
+				</h3></ul>
+			</section>
+
+			<section><h2>Our partners</h2></section>
+			<section data-background = "images/British-Red-Cross-Logo.jpg" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section><h2>Exploiting the time difference</h2></section>				
+			<section data-background = "images/HOT-logo.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section><h2>Volunteer tracing</h2></section>
+			<section data-background = "images/osm_taskingManager.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>	
+			<section><h2>Communications:</h2></br><h3>Skype chats, Github commits, email</h3></section>
+			<section><h2>Making maps "internable"</h2></section>
+			<section><h2>AI templates @ consistent scale</h2></section>
+			<section data-background = "images/AI_organization.png" data-background-size="400px"><h2 style="background: rgba(7,7,7,0.5)">Layer management</h2></section>
+			<section data-background = "images/2014_03_31_OpsOverview_Casework.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section><h2>"On the job" CartoCSS training for all comers</h2></section>
+			<section data-background = "images/Haiyan_Tilemill.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section><h2>Evolutionary templating</h2></section>
+			<section data-background = "images/2013_11_11_MapRequest2_CebuCityLogistics.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/2013_11_12_MapRequest2_CebuCityOperations_update131113.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/2013_11_15_CebuCityOperations_ATLANTIC.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/2013-12-16_StaffLocations.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/2013-12-26_StaffLocations.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/2013-12-18_MovementPartners3W.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+
+			<section><h1>Deploying: getting maps on the plane</h1></section>
+			<section><blockquote>10:30 AM</br>"We're sending someone to the northern Congo at 5:30 PM. Think you can get them 20 maps of the area?"</blockquote></section>
+			<section><h2>Crap</h2></section>
+			<section><h2>The scramble</h2></section>
+			<section><h2>Large format reference maps - OSM or outside sources</h2></section>
+			<section data-background = "images/Daniel_in_the_map_room.jpg" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/maptube.jpg" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/2013-01-19_GermanWatSanTentDulagLeyte_1.jpg" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section><h2>"Map packs" on USB</h2></section>		
+			<section><h2>OSM onto Garmin</h2></br><h2>Tablets with OSMAnd + country maps</h2></section>
+			<section data-background = "images/OSMAnd.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>					
+			<section data-background = "images/OSMAnd.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>					
+			<section><h2>Experimental: Offline interactive maps for dummies</h2></section>
+			<section><h2>20 minute briefing</h2></section>
+			<section><h2>Go go go go</h2></section>
+			<section data-background = "images/deploying_with_maps.jpg" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section><h1>Remote support and coping with connectivity</h1></section>
+			<section><h1>Or</h1></section>
+			<section><h1>Getting from this</h1></section>
+			<section data-background = "images/info_in_the_field.jpg" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section data-background = "images/Skype_during_haiyan_greyed.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section><h1>to this</h1></section>
+			<section data-background = "images/PRC_maps_planning.jpg" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>	
+			<section data-background = "images/Field_maps_planning.jpg" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>	
+			<section data-background = "images/IFRC_maps_planning_3.jpg" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>					
+			<section><h2>BGAN</h2></section>
+			<section data-background = "images/BGAN.gif" data-background-size="800px"><h1 style="background: rgba(7,7,7,0.5)">$$$</h1></section>				
+			<section><h2>VSAT</h2></section>
+			<section data-background = "images/vsat.jpeg" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)">:)</h2></section>
+			<section><h2>Export as PDF, then export as PNG</h2></br><h3>Half the file size, all the fun</h3></section>
+			<section><h2>Transferring files</br></h2></br><blockquote>"Please stop killing the dropbox"</blockquote></section>
+			<section><h2>Mapfolio</h2></section>
+			<section data-background = "images/mapfolio_shot1.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>					
+			<section data-background = "images/mapfolio_shot2.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>					
+			<section data-background = "images/mapfolio_modal.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>				
+			<section data-background = "images/Haiyan_Mapfolio_reducedsizedownload.png" data-background-size="800px"><h2 style="background: rgba(7,7,7,0.5)"></h2></section>
+			<section><blockquote>americanredcross.github.io/haiyan_mapfolio</blockquote></section>
+			<section><h2>The map dashboard</br>a.k.a.</br>betraying our principles</h2></section>
+			<section><h1>Looking forward</h1></section>
+			<section><h2>Integrating Mapbox Studio</h2></section>
+			<section><h2>Pushing OSM difs to offline interactive maps</h2></section>
+			<section><h2>Volunteer roster</h2></section>
+			<section><h2>OSM + ODK - linking assessment data to response data</h2></section>
+			<section><h1>Questions?</h1></section>
+			<section><h1>Let's go drink</h1></section>
+		</div>
+	</div>
+	<script src="js/lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				center: true,
+				// rtl: true,
+
+				transition: 'linear',
+				// transitionSpeed: 'slow',
+				// backgroundTransition: 'linear'
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+	</script>
+	<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42245094-1', 'americanredcross.github.io');
+      ga('send', 'pageview');
+
+      </script>
+</body>
+</html>
