@@ -1,0 +1,11 @@
+{
+  "name": "presentations",
+  "version": "0.0.0",
+  "homepage": "https://github.com/AmericanRedCross/presentations",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~1",
+    "d3": "~3.5.3",
+    "bootstrap": "~3.3.2"
+  }
+}
