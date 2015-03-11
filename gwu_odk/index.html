@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="google-translate-customization" content="dd5207c171a5d11a-29d1c9c17ff34632-g6f9aa177fdeafd13-1a"></meta>
+
+	<title>GWU GIS ODK</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/redcross.css" id="theme">
+</head>
+
+<body>
+	<a href="http://redcross.org">
+		<div class="redcross_logo" /></div>
+	</a>
+
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>GIS Field Methods</h1>
+				<h4>George Washington University</h4>
+			</section>
+			<section data-background="images/arc_paris_ww2.jpg" data-background-size="contain">
+				<h1>Dale Kunce</h1>
+				<h1>@calimapnerd</h1>
+			</section>
+
+			<!-- Why Maps -->
+			<section data-background="images/johnsnow_got.jpeg" data-background-size="contain">
+				<aside class="notes">Modern humanitarian mapping can be traced back to John Snow, not that john snow.</aside>
+			</section>
+			<section data-background="images/johnsnow_cholera.jpg" data-background-size="contain">
+				<aside class="notes">This john snow who mapped cholera cases and well locations in london over 100 years ago to pinpoint the source of cholera.</aside>
+			</section>
+			<section data-background="images/osm_density.png" data-background-size="contain">
+				<aside class="notes">maps certainly don't exist for most of the world's vulnerable population</aside>
+			</section>
+			<section data-background="images/carhood.jpg" data-background-size="contain">
+				<aside class="notes">maps are used in a alot of way, her one of our staff is planning routes for relief distrabutions with local RC staff.</aside>
+			</section>
+			<section data-background="images/mapkibera.jpg" data-background-size="contain">
+				<aside class="notes">maps allow communities to advocate for themselves.</aside>
+			</section>
+
+
+			<!-- Vulnerability -->
+			<section>
+				<h2>What is Vulnerablity?</h2>
+			</section>
+			<section>
+				<h2>Who is Vulnerable?</h2>
+			</section>
+			<section>
+				<h2>Where?</h2>
+			</section>
+			<section data-background="images/world_vulnerability.jpg" data-background-size="contain">
+				<aside class="notes">By and large the vulnerable people in the world do not live in the western/developed world.</aside>
+			</section>
+			<section data-background="images/tanzania_women.jpg" data-background-size="contain">
+				<aside class="notes">women headed households are extremely vulnerable.</aside>
+			</section>
+			<section data-background="images/urbanpoverty.png" data-background-size="contain">
+				<aside class="notes">Richer communities by and large have figured out ways to seperate themselves to become more resilient</aside>
+			</section>
+			<section>
+				<h2>Hazards</h2>
+			</section>
+			<section data-background="images/africa_drought.jpg" data-background-size="contain">
+				<aside class="notes">drought in africa</aside>
+			</section>
+			<section data-background="images/haiti_earthquake.jpg" data-background-size="contain">
+				<aside class="notes">earthquakes in Haiti</aside>
+			</section>
+			<section data-background="images/dhaka_flood.jpg" data-background-size="contain">
+				<aside class="notes">floods in Asia</aside>
+			</section>
+			<section data-background="images/tsunami-2004.jpg" data-background-size="contain">
+				<aside class="notes">floods in Asia</aside>
+			</section>
+			<section data-background="images/tsunami_map.gif" data-background-size="contain">
+				<aside class="notes">big disasters affect a lot of people. We can't help everyone after the event. Before events we can identify </aside>
+			</section>
+
+			<!-- Why Dhaka -->
+			<section>
+				<h2>Top 3 Densist Cities?</h2>
+			</section>
+			<section>
+				<h3 class="fragment grow">Dhaka 43,500/km2</h3>
+				<h3 class="fragment grow">Mumbai 40,300/km2</h3>
+				<h3 class="fragment grow">Hyberabad 32,000/km2</h3>
+			</section>
+			<section data-background="images/dhaka.jpg" data-background-size="contain">
+				<aside class="notes">Dhaka and Bangladesh is a strategic interest for the RC. Basically there are lots of people that need our help.</aside>
+			</section>
+			<section data-background="images/dhaka_graph.png" data-background-size="contain">
+				<aside class="notes">Dhaka is incrediably dense</aside>
+			</section>
+			<section>
+				<h2>75% more dense than Hong Kong</h2>
+			</section>
+			<section data-background="images/BadData.jpg" data-background-size="contain">
+				<aside class="notes">When we do have data is often very poor.</aside>
+			</section>
+			<section data-background="images/dhaka_mapcompare.png" data-background-size="contain">
+				<aside class="notes">Basic data about dhaka doesn't exist. If it does, its usually suspect.</aside>
+			</section>
+			<section data-background="images/dhaka_flood_map.png" data-background-size="contain">
+				<aside class="notes">Hazard data is even harder to find.</aside>
+			</section>
+
+			<!-- Why ODK -->
+			<section>
+				<h1>Why ODK?</h1>
+			</section>
+			<section data-background="images/haiyan.gif" data-background-size="contain">
+				<aside class="notes">Haiyan made landfall on November 8th with sustained winds of 195mph with gusts of 235mph, a storm surge of 6 meters with waves as high as 12 meters, and affected around 16 million people.<sup><a href"http://unocha.com">[1]</a></sup></aside>
+			</section>
+			<section data-background="images/ebola_osm.png" data-background-size="contain">
+				<aside class="notes">We've figured out the remote side of the workflow. Now we need to figure out the field data collection side.</aside>
+			</section>
+			<section data-background="images/decisions.gif" data-background-size="contain">
+				<aside class="notes">how did we find ODK, basically we didn't have any data to be able to make informed decisions.</aside>
+			</section>
+			<section data-background="images/cat.gif" data-background-size="contain">
+				<aside class="notes">Getting going with ODK as an institution wasn't easy. Lots of mistakes and failures.</aside>
+			</section>
+			<section data-background="images/numbers.gif" data-background-size="contain">
+				<aside class="notes">Once you get started with ODK you will love the fact that everything is structured. Getting answers is a lot faster than paper.</aside>
+			</section>
+			<section data-background="images/androidvios.jpg" data-background-size="contain">
+				<aside class="notes">numbers don't lie Android is used a lot more than iOS. Sorry 'bout it.</aside>
+			</section>
+
+			<!-- but really why ODK -->
+			<section>
+				<h1>faster</h1>
+				<ul>
+					<li class="fragment grow">surveying and encoding combined into one step</li>
+					<li class="fragment grow">data can be analyzed as it is being collected</li>
+				</ul>
+			</section>
+
+			<section>
+				<h1>accuracy</h1>
+				<ul>
+					<li class="fragment grow">skip logic to guide the data gatherer</li>
+					<li class="fragment grow">constraint checks to ensure data is entered properly</li>
+					<li class="fragment grow">no encoding step means no transcription errors</li>
+				</ul>
+			</section>
+
+			<section>
+				<h1>informative</h1>
+				<ul>
+					<li class="fragment grow">collect data at the source</li>
+					<li class="fragment grow">accurate timestamps</li>
+					<li class="fragment grow">GPS coordinates</li>
+					<li class="fragment grow">photos</li>
+					<li class="fragment grow">integrated with OSM</li>
+				</ul>
+			</section>
+
+			<section>
+				<h1>Structured Data = Unlocked Data</h1>
+			</section>
+			<section>
+				<h1>Excel is a powerful tool</h1>
+			</section>
+			<section data-background="images/screen_data.png" data-background-size="contain">
+			</section>
+			<section>
+				<h1>Create online tools to analyze (good) data</h1>
+			</section>
+			<section data-background="images/screen_analysisDistributions.png" data-background-size="contain">
+			</section>
+			<section data-background="images/screen_analysisMap.png" data-background-size="contain">
+			</section>
+			<section data-background="images/reporting.png" data-background-size="contain">
+			</section>
+
+			<!-- Into to ODK -->
+			<section>
+				<h3>Open Data Kit (ODK) is a set of free and open-source tools to help you use mobile data collection solutions.</h3>
+				<aside class="notes"></aside>
+			</section>
+			<section>
+				<h2><blockquote cite="https://formhub.org/faq/">"timely and accurate data is the single greatest component of making socially impactful decisions"</blockquote></h2>
+			</section>
+			<section>
+				<h2><blockquote cite="https://formhub.org/faq/">"making data collection simple — allowing more time for harder tasks like how to make an impact with the information"</blockquote></h2>
+			</section>
+			<section>
+					<ul>
+						<li>tool for making data collection simple</li>
+						<li>built by the Modi Research Group at Columbia University</li>
+						<li>freely available under an opensource license</li>
+					</ul>
+			</section>
+			<section data-background="images/formhub1design.png" data-background-size="contain">
+				<h1>1. DESIGN the survey</h1>
+			</section>
+			<section>
+				<h1>XLSForms</h1>
+					<ul>
+						<li>created in Excel</li>
+						<li>easy collaborative authoring</li>
+						<li>enables large, complex, multi-lingual surveys</li>
+						<li>lots of community support online</li>
+					</ul>
+			</section>
+			<section data-background="images/formhub2collect.png" data-background-size="contain">
+				<h1>2. COLLECT the data</h1>
+			</section>
+			<section data-background="images/screen_ODKCollect.png" data-background-size="contain"></section>
+			<section data-background="images/screen_mainMenu.png" data-background-size="contain"></section>
+			<section data-background="images/screen_selectone.png" data-background-size="contain"></section>
+			<section data-background="images/screen_text.png" data-background-size="contain"></section>
+			<section data-background="images/screen_pic.png" data-background-size="contain"></section>
+			<section data-background="images/screen_gpsEnglish.png" data-background-size="contain"></section>
+			<section data-background="images/screen_gpsChangeLanguage.png" data-background-size="contain"></section>
+			<section data-background="images/screen_gpsSpanish.png" data-background-size="contain"></section>
+			<section data-background="images/screen_surveyEnd.png" data-background-size="contain"></section>
+			<section data-background="images/formhub3analyze.png" data-background-size="contain">
+				<h1>3. ANALYZE the data</h1>
+			</section>
+			<section data-background="images/screen_formhubData.png" data-background-size="contain"></section>
+			<section data-background="images/screen_download.png" data-background-size="contain"></section>
+			<section data-background="images/screen_excelData.png" data-background-size="contain"></section>
+			<section data-background="images/ttl_dashboard.png" data-background-size="contain"></section>
+
+			<!-- How to ask a good question -->
+			<section data-background="images/owenincircles.gif" data-background-size="contain">
+				<aside class="notes">Asking good question is tough you have to look at your survey a lot. You'll be going over and over it a ton.</aside>
+			</section>
+			<section data-background="images/decision.jpg" data-background-size="contain">
+				<aside class="notes">What is the decision you are trying to make with the data.</aside>
+			</section>
+			<section data-background="images/trust.gif" data-background-size="contain">
+				<aside class="notes">The community you are working in is putting a lot of trust in you. Don't mess it up.</aside>
+			</section>
+			<section>
+				<h2>How far do you travel to get to water everyday?</h2>
+				<aside class="notes">This is the classic blunder</aside>
+			</section>
+			<section>
+				<h2>How far in minutes do you travel to get water during an average week?</h2>
+				<aside class="notes">a good survey pushes people into buckets, doesn't allow either the enumerator or the respondent to mess up.</aside>
+			</section>
+			<section>
+				<h2>How old is the head of household?</h2>
+				<aside class="notes">seems simple what kind of question would you make this.</aside>
+			</section>
+			<section>
+				<h3>What is the age of the head of the household?</h3>
+				<ul>
+					<li>Under 18 </li>
+					<li>18-35 </li>
+					<li>36-50</li>
+					<li>Over 50</li>
+				</ul>
+				<aside class="notes">note that this is a select_one type question and not an interger field</aside>
+			</section>
+			<section data-background="images/ohoh.gif" data-background-size="contain">
+				<aside class="notes">So now that you've got all of your data what do you do?</aside>
+			</section>
+
+			<!-- Closing -->
+			<section data-background="images/mapoff.png" data-background-size="contain">
+				<aside class="notes">Show what you've got and go join the mapoff</aside>
+			</section>
+			<section>
+				<h1>Always Map for Good</h1>
+			</section>
+
+		</div>
+	</div>
+</div>
+<div id="google_translate_element" style="position:absolute;bottom:5px;left:5px;z-index:9999;">
+</div>
+<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT}, 'google_translate_element');
+	}
+</script>
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script src="js/lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	Reveal.initialize({
+		center: true,
+		transition: 'concave',
+		backgroundTransition: 'convex',
+		dependencies: [
+					{ src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+	});
+</script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-42245094-1', 'americanredcross.github.io');
+	ga('send', 'pageview');
+
+</script>
+</body>
+</html>

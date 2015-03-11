@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="google-translate-customization" content="dd5207c171a5d11a-29d1c9c17ff34632-g6f9aa177fdeafd13-1a"></meta>
+
+	<title>FOSS4G NA 2015</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/redcross.css" id="theme">
+</head>
+
+<body>
+	<a href="http://redcross.org">
+		<div class="redcross_logo" /></div>
+	</a>
+
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-color="#80bb72">
+			<h1 style="color:#fff;">OpenMapKit</h1>
+			<h3 style="color:#fff;"></h3>
+			</section>
+			<section data-background="images/arc_paris_ww2.jpg" data-background-size="contain">
+				<h1>Dale Kunce</h1>
+				<h1>@calimapnerd</h1>
+			</section>
+
+			<!-- OMK Origins -->
+			<section data-background="images/OSM_dmg_assessment.png" data-background-size="contain">
+				<aside class="notes">On the ground assessment tools are terrible for conducting a rapid assessment. To much data is recorded on paper which is hard to keep track of, prone to bad encoding, and time consuming to analyze.</aside>
+			</section>
+			<section data-background="images/dmg_assessment_recomendations.png" data-background-size="contain">
+				<aside class="notes">We are making great strides on our recogmendations from the <a href="http://americanredcross.github.io/OSM-Assessment">OSM-Assessment</a></aside>
+			</section>
+
+			<section data-background="images/fieldpapers.png" data-background-size="contain">
+				<aside class="notes">Field Papers is awesome. However, its not good really structured assessments. Lots of time is spent just encoding the data after its been collected.</aside>
+			</section>
+			<section data-background="images/opencities_buildingsurvey.png" data-background-size="contain">
+				<aside class="notes">World Bank and OpenCities did some work to create structured forms. These still take lots of time to encode and push to OSM. We needed a tool that would do all of this in one phase. Decreasing the time from data collection to decision.</aside>
+			</section>
+
+
+			<!-- Why Dhaka -->
+			<section data-background="images/usaid_bangladesh.png" data-background-size="contain">
+				<aside class="notes">We approached USAID with an idea to build an app to allow us to collect OSM data before and after disasters. They loved the idea and we started work late last year.</aside>
+			</section>
+			<section>
+				<h1>Why Dhaka</h1>
+			</section>
+			<section>
+				<h2 class="fragment roll-in">SF 6,632/km2</h2>
+				<h2 class="fragment roll-in">NYC 10,725/km2</h2>
+				<h1 class="fragment roll-in">Dhaka 43,500/km2</h1>
+			</section>
+			<section>
+				<h1>75%</h1>
+				<h2>more dense than Hong Kong</h2>
+			</section>
+			<section data-background="images/dhaka.jpg" data-background-size="contain">
+				<aside class="notes">Dhaka and Bangladesh is a strategic interest for the RC. Basically there are lots of people that need our help.</aside>
+			</section>
+			<section data-background="images/BadData.jpg" data-background-size="contain">
+				<aside class="notes">When we do have data is often very poor.</aside>
+			</section>
+			<section data-background="images/dhaka_mapcompare.png" data-background-size="contain">
+				<aside class="notes">Basic data about dhaka doesn't exist. If it does, its usually suspect.</aside>
+			</section>
+			<section data-background="images/dhaka_flood_map.png" data-background-size="contain">
+				<aside class="notes">Hazard data is even harder to find.</aside>
+			</section>
+
+
+			<!-- Why OMK -->
+			<section>
+				<h1>Why OMK?</h1>
+			</section>
+			<section>
+				<h2>Existing OSM Mobile tools are clunky and not very user friendly</h2>
+			</section>
+			<section>
+				<h1>OSMAnd</h1>
+				<aside class="notes">is great for routing and general offline maps but terrible for editing</aside>
+			</section>
+			<section>
+				<h1>Vespucci</h1>
+				<aside class="notes">is good for some light editing, but can be distructive without tons of training</aside>
+			</section>
+			<section data-background="images/ebola_osm.png" data-background-size="contain">
+				<aside class="notes">We've figured out the remote side of the workflow. Now we need to figure out the field data collection side.</aside>
+			</section>
+			<section data-background-color="#000" data-background="images/mm_logo.png" data-background-size="contain">
+				<aside class="notes">Red Cross is really going to be stepping up our field mapping in the next year and we needed a tool that we could take to scale.</aside>
+			</section>
+			<section data-background-color="#fff" data-background="images/mm_process.png" data-background-size="contain">
+				<aside class="notes">The second part of the Missing Maps process is to map locally. Ill be going to Harare next week to give OMK a field trial and help some of our urban disaster risk reduction programming in Africa.</aside>
+			</section>
+			<section data-background="images/androidvios.jpg" data-background-size="contain">
+				<aside class="notes">numbers don't lie Android is used a lot more than iOS. Sorry 'bout it. This was an easy choice for us and we do not have any plans to develop an iOS app.</aside>
+			</section>
+
+			<!-- OMK Design -->
+			<section data-background="images/helpplease.gif" data-background-size="contain">
+				<aside class="notes">Its usually at this point in the project when I look around for some help. We called in our friends at SpatialDev and they have helped us build OMK. Great partners that understand FOSS and Humanitarian work.</aside>
+			</section>
+			<section data-background-color="#fff" data-background="images/OpenMapKit_flowchart.png" data-background-size="contain">
+				<aside class="notes">We had a ton of whiteboarding sessions. Lots of terrible ideas and routes that we didn't pursue. Ultimatly we arrived at this.</aside>
+			</section>
+			<section data-background="images/buckets.jpg" data-background-size="contain">
+				<aside class="notes">OpenDataKit is all about getting people to answer questions in standard ways to derive the most information from them. Bad Data is really hard to analyze. We think about ODK survey answers like putting stuff into buckets. Good tagging in OSM is very similar, we don't versions of the same tag. We want the same tag.</aside>
+			</section>
+			<section data-background="images/friends.png" data-background-size="contain">
+				<aside class="notes">Doing it the right way. We aren't forking ODK, we are improving it. Committing our code back into the ODK Master</aside>
+			</section>
+			<section>
+				<h2>OSM as a</h2><h1>Media Type</h1>
+				<aside class="notes">After some researh we decided to make OSM its own media type in ODK. This would make changes in java rosa much more lightweight and allow us to focus on the app and not the 5 year old code in JavaRosa.</aside>
+			</section>
+
+			<!-- survey form -->
+			<section data-background="images/omk_tabs.png" data-background-size="contain">
+				<aside class="notes">Same layout as traditional xlsforms but we added the osm tab. We made changes to pyxform to handle the new osm media type to take the xlsform to the formhub api.</aside>
+			</section>
+			<section data-background="images/survey.png" data-background-size="contain">
+				<aside class="notes">Same layout and workflow at ODK. Key thing to note is the use of the osm question type.</aside>
+			</section>
+			<section data-background="images/choices.png" data-background-size="contain">
+				<aside class="notes">Choices tab is unchanged</aside>
+			</section>
+			<section data-background="images/osm.png" data-background-size="contain">
+				<aside class="notes">introduce a new OSM tab with all relevent information</aside>
+			</section>
+
+			<!-- OpenMapKit -->
+			<section>
+				<section>
+					<h1>Demo!?!</h1>
+				</section>
+
+				<section>
+					<h1>Buildings</h1>
+				</section>
+				<section data-background="images/map-view-omk.png" data-background-size="contain">
+					<aside class="notes">OMK appears as an extension of ODK. OMK is meant to be a seamless implementation.</aside>
+				</section>
+				<section data-background="images/building.png" data-background-size="contain">
+					<aside class="notes"></aside>
+				</section>
+				<section data-background="images/city.png" data-background-size="contain">
+					<aside class="notes"></aside>
+				</section>
+				<section data-background="images/amenity.png" data-background-size="contain">
+					<aside class="notes"></aside>
+				</section>
+				<section data-background="images/name-omk.png" data-background-size="contain">
+					<aside class="notes"></aside>
+				</section>
+				<section data-background="images/tag-list-omk.png" data-background-size="contain">
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h1>Roads</h1>
+				</section>
+				<section data-background="images/road-odk-osm-widget.png" data-background-size="contain">
+					<aside class="notes"></aside>
+				</section>
+				<section data-background="images/street.png" data-background-size="contain">
+					<aside class="notes"></aside>
+				</section>
+				<section data-background="images/french-omk.png" data-background-size="contain">
+					<aside class="notes">just like ODK, OMK is language agnostic. You can use any local language.</aside>
+				</section>
+				<section data-background="images/completed-odk-omk-widget.png" data-background-size="contain">
+					<aside class="notes">OMK appears as an extension of ODK. OMK is meant to be a seamless implementation.</aside>
+				</section>
+
+			</section>
+
+			<!-- Ona -->
+			<section data-background="images/omk_in_ona.png" data-background-size="contain">
+				<aside class="notes">Once a survey is complete you can save the survey, and submit it to a formhub api server. This piece is still under active development and the source has not been released yet. Once we move beyond alpha versions we will post the source to github</aside>
+			</section>
+			<section data-background="images/export_osm.png" data-background-size="contain">
+				<aside class="notes">Once a survey is complete you can save the survey, and submit it to a formhub api server. This piece is still under active development and the source has not been released yet. Once we move beyond alpha versions we will post the source to github</aside>
+			</section>
+
+			<!-- Closing -->
+			<section data-background="images/github-mark.png" data-background-size="contain">
+				<aside class="notes">All of the code for OMK is open sourced and is available on github right now</aside>
+			</section>
+			<section data-background-color="#fff" data-background="images/stateofthemap_un.png" data-background-size="contain">
+				<h1>State of the Map US</h1>
+				<h2>June 6-8</h2>
+				<aside class="notes">If you like OSM I encourage you to attend State of the Map US in New York. Its going to be a good time with lots of talks from all walks of OSM.</aside>
+			</section>
+			<section>
+				<h1>Always Map for Good</h1>
+			</section>
+
+		</div>
+	</div>
+</div>
+<div id="google_translate_element" style="position:absolute;bottom:5px;left:5px;z-index:9999;">
+</div>
+<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT}, 'google_translate_element');
+	}
+</script>
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script src="js/lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	Reveal.initialize({
+		center: true,
+		progress: true,
+		history: true,
+		controls: true,
+		transition: 'fade',
+		backgroundTransition: 'fade',
+		dependencies: [
+					{ src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+	});
+</script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-42245094-1', 'americanredcross.github.io');
+	ga('send', 'pageview');
+
+</script>
+</body>
+</html>
